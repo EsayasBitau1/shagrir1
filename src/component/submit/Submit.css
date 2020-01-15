@@ -17,7 +17,7 @@
   .flex-container{
     display: flex;
   }
-.submit1 {
+.submit {
   position: relative;
   width: 100%;
   height: 4rem;

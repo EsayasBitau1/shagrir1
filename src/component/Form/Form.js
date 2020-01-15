@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Input from '../Input/Input';
 import './Form.css'
+import {Link} from 'react-router-dom'
+
+
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +17,7 @@ const Form = () => {
       [event.target.name]: event.target.value
     })
   }
-  
+
   console.log(formData);
   return (
     <form className="form">
@@ -28,6 +31,11 @@ const Form = () => {
         <Input onChange={handleChange} name="id" pattern="[0-9]{6}" placeholder="תאריך" />
         <Input placeholder="CVV" />
       </div>
+      <section className="buttons" >
+            <Link to='/done' className='btn btn-light'>
+              שלח >>
+            </Link>
+            </section>
     </form>
   );
 }
