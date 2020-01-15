@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+  }
+  .done{
+    width:400px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .flex-container{
+    display: flex;
+  }

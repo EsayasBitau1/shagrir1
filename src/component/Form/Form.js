@@ -23,12 +23,11 @@ const Form = () => {
       <Input onChange={handleChange} name="id" pattern="[0-9]{3}" placeholder="מספר ת.ז" />
       <Input onChange={handleChange} name="email" placeholder="מייל" />
       <Input placeholder="טלפון" />
-      <Input placeholder="מספר כ. אשראי" />
+      <Input onChange={handleChange} name="id" pattern="[0-9]{14}" placeholder="מספר כ. אשראי" />
       <div className="flex-container">
-        <Input placeholder="תאריך" />
+        <Input onChange={handleChange} name="id" pattern="[0-9]{6}" placeholder="תאריך" />
         <Input placeholder="CVV" />
       </div>
-      <button type="submit">שלח</button>
     </form>
   );
 }
