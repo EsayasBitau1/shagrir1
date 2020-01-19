@@ -1,3 +1,21 @@
-.p {
-    padding: 0.5rem;
+   body{
+    direction:rtl;
+    height: 100vh;
   }
+  .landing {
+    position: relative;
+    background-image: url('../../img/notifiction.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  .notifiction-container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+ 
+  
+  

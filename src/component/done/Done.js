@@ -5,11 +5,17 @@ import users from '../../data/users.json'
 export const Done = () => {
     return (
         <Fragment>
-            <section className="done">
-           <h1>התשלום התקבל בהצלחה</h1> 
-
-           <p> {users.sum} : הסכום ששולם</p>
-           <p> {users.ticketNum} : הסכום ששולם </p>
+            <section className="background">
+                <section className="done-container">
+                    <div className="done">
+                        <h1>התשלום התקבל בהצלחה</h1>
+                        הסכום ששולם : {users.sum}  <br />
+                        מספר חשבונית : {users.ticketNum} <br />
+                    </div>
+                    <div className="btn-done">
+                        לצפייה בחשבונית לחץ
+                    </div>
+                </section>
             </section>
         </Fragment>
     )
